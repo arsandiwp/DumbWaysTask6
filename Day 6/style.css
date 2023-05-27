@@ -156,6 +156,23 @@ input, select, textarea {
 
 .submit {
    float: right;
+   margin-bottom: 20px;
+}
+
+.submit button {
+   border: 1px solid black;
+   border-radius: 20px;
+   width: 130px;
+   padding: 10px 30px;
+   color: white;
+   background-color: black;
+   cursor: pointer;
+}
+
+.submit button:hover {
+   color: black;
+   background-color: white;
+   transition: 0.5;
 }
 
 /* RESPONSIVE */
@@ -207,7 +224,17 @@ input, select, textarea {
      align-items: center;
      margin: auto;
      width: 100%;
-   } 
+   }
+
+   #container {
+      width: 100%;
+   }
+
+   form {
+      margin: 20px;
+   }
+
+
  }
  
  @media only screen and (max-width: 550px) {

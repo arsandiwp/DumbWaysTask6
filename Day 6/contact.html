@@ -13,14 +13,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- NAVBAR  -->
     <nav>
         <a href="index.html"><img src="img/logo.png" alt="logo"></a>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="myproject.html">My Project</a></li>
+            <li class="item-collapse"><a href="index.html">Home</a></li>
+            <li class="item-collapse"><a href="myproject.html">My Project</a></li>
         </ul>
-        <a href="contact.html"><button>Contact Me</button></a>
+        <div class=" item-collapse">
+            <a href="contact.html"><button class="nav-btn active">Contact Me</button></a>
+        </div>
+        <div id="barsmenu">
+            <button onclick="openHamburger()">
+              <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+          </div>
     </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="myproject.html">My Project</a>
+        <a href="contact.html" class="hamburger-active">Contact Me</a>
+    </div>
+    <!-- NAVBAR  -->
     <div id="container">
         <h1>GET IN TOUCH</h1>
         <form action="">
@@ -55,5 +70,6 @@
         </form>
     </div>
     <script src="contact.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
